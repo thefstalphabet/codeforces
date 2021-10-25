@@ -1,2 +1,2 @@
 # codeforces
-In this repo, I have stored all the problems solutions that I have solved on codeforces contests and while doing practice.
+The Repo Contained, all the Problems Solutions That I've Solved on Codeforces Contests & while doing Practice.
