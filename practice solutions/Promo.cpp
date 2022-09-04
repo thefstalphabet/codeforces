@@ -1,25 +1,27 @@
-// #include<bits/stdc++.h>
-// using namespace std;
-// int main(){
-//     int len, queries;
-//     cin>>len>>queries;
-//     vector<int> vc(len);
-//     for(int i=0; i<len; i++){
-//         cin>>vc[i];
-//     } sort(vc.begin(), vc.end());
-//     while(queries--){
-//         int x, y, sum = 0;
-//         cin>>x>>y;
-//         for(int i = abs(x-len); i<len; i++){
-//             if(y==0) break;
-//             sum+=vc[i];
-//             y--;
-//         }
-//         cout<<sum<<endl;
-//     }
-//     return 0;
-// }
+// Brute force
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int len, queries;
+    cin>>len>>queries;
+    vector<int> vc(len);
+    for(int i=0; i<len; i++){
+        cin>>vc[i];
+    } sort(vc.begin(), vc.end());
+    while(queries--){
+        int x, y, sum = 0;
+        cin>>x>>y;
+        for(int i = abs(x-len); i<len; i++){
+            if(y==0) break;
+            sum+=vc[i];
+            y--;
+        }
+        cout<<sum<<endl;
+    }
+    return 0;
+}
 
+// Optimize
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
